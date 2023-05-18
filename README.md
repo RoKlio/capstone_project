@@ -18,11 +18,11 @@ The project structure is organized as follows:
 
 ├── data/
 │ └── movie_metadata.csv
-├── flask app/
-│ ├── flask_app.py
-│ │── index.html
-├── notebooks/
-│ └── movie_analysis.ipynb
+├── flask_app/
+│ ├── app.py
+│ ├── index.html
+└── notebooks/
+│ └── modelling_and_EDA.ipynb
 
 ## Imports
 
