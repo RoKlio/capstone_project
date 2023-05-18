@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Rating Prediction</title>
+  </head>
+  <body>
+    <h1>Movie Rating Prediction</h1>
+    <form action="/predict" method="POST">
+      <label for="num_critic_for_reviews">Number of Critic Reviews:</label>
+      <input type="number" name="num_critic_for_reviews" id="num_critic_for_reviews" required><br>
+      <input type="number" name="duration" id="duration" required><br>
+      <input type="number" name="num_voted_users" id="num_voted_users" required><br>
+      <input type="number" name="num_user_for_reviews" id="num_user_for_reviews" required><br>
+      <input type="number" name="movie_facebook_likes" id="movie_facebook_likes" required><br>
+      
+      <input type="submit" value="Predict">
+    </form>
+  </body>
+</html>
