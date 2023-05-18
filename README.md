@@ -1,18 +1,32 @@
 # Movie Dataset Analysis
 
-This project involves the analysis of a movie dataset using Python and various libraries such as pandas, seaborn, numpy, matplotlib, and torch. The dataset used in this project is stored in a CSV file named "movie_metadata.csv". The goal of this project is to perform exploratory data analysis (EDA) on the dataset, handle missing values, and gain insights from the data.
+## This is a capstone project for Code Academy course programme
+
+This project involves the analysis of a movie dataset using Python and various libraries. The dataset used in this project is stored in a CSV file named "movie_metadata.csv". The goal of this project is to perform exploratory data analysis (EDA) on the dataset, and train the model for IMDB score prediction.
 
 ## Table of Contents
-
+- [Project structure](#project-structure)
 - [Imports](#imports)
 - [Data Loading](#data-loading)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Dealing with Missing Values](#dealing-with-missing-values)
 - [Further Examination](#further-examination)
 
+## Project structure
+
+The project structure is organized as follows:
+
+├── data/
+│ └── movie_metadata.csv
+├── flask app/
+│ ├── flask_app.py
+│ │── index.html
+├── notebooks/
+│ └── movie_analysis.ipynb
+
 ## Imports
 
-The required libraries for this project are imported, including pandas, seaborn, numpy, matplotlib, torch, and scikit-learn.
+The required libraries for this project are imported.
 
 ## Data Loading
 
@@ -20,20 +34,18 @@ The dataset is loaded from the "movie_metadata.csv" file using the pandas librar
 
 ## Exploratory Data Analysis (EDA)
 
-The EDA section begins with examining the dataset by displaying the first few rows using `df.head()`. The column names are displayed using `df.columns`, and the shape of the dataset (number of rows and columns) is printed using `df.shape`. The `df.info()` method provides information about the data types and missing values in each column.
+The EDA section begins with examining the dataset. Here we plot some graphs about our data set such as most popular language, actors and directors. We also check for some of the correlations between data.
 
-A summary of the numerical columns is generated using `df.describe().T`, which includes statistics such as count, mean, standard deviation, minimum, 25th percentile, median, 75th percentile, and maximum values.
+## Feature engineering
 
-## Dealing with Missing Values
+We add some features to our dataset. I think important ones should be actor and director popularity and profit that the movie has made.
 
-The code checks for missing values in each column using `df.isna().sum()`. Based on the number of missing values and the feasibility of filling or dropping the columns, certain columns are dropped or filled. For example, columns with a small number of missing values or categorical values are dropped using `df.dropna()`. The `budget` and `gross` columns are filled with the median values using `fillna()`.
+## Modelling
 
-After handling missing values, duplicate rows are removed using `df.drop_duplicates()`. The final shape of the dataset is printed to show the number of rows and columns remaining.
-
-## Further Examination
-
-Additional analysis is performed on the dataset. The count of movies per language is displayed using a bar plot created with seaborn. A countplot is used to visualize the number of movies made per year. Lastly, a line plot is used to explore the relationship between IMDb scores and the number of Facebook likes on movie pages.
+Here we make a tunable LSTM model and check its predictions. Then I compare it to some of machine learning models.
 
 ## Conclusion
 
 This project provides a detailed analysis of the movie dataset, including data loading, exploratory data analysis, handling missing values, and additional examination. The code can be used as a starting point for further analysis or as a reference for working with similar datasets.
+
+
