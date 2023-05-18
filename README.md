@@ -5,22 +5,11 @@
 This project involves the analysis of a movie dataset using Python and various libraries. The dataset used in this project is stored in a CSV file named "movie_metadata.csv". The goal of this project is to perform exploratory data analysis (EDA) on the dataset, and train the model for IMDB score prediction.
 
 ## Table of Contents
-- [Project structure](#project-structure)
 - [Imports](#imports)
 - [Data Loading](#data-loading)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Dealing with Missing Values](#dealing-with-missing-values)
 - [Further Examination](#further-examination)
-
-## Project structure 
-├── data/
-│   └── movie_metadata.csv
-├── flask_app/
-│   ├── app.py
-│   ├── templates/
-│   │   └── index.html
-└── notebooks/
-    └── movie_analysis.ipynb
 
 
 ## Imports
