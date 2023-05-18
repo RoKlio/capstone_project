@@ -12,17 +12,16 @@ This project involves the analysis of a movie dataset using Python and various l
 - [Dealing with Missing Values](#dealing-with-missing-values)
 - [Further Examination](#further-examination)
 
-## Project structure
-
-The project structure is organized as follows:
-
+## Project structure 
 ├── data/
-│ └── movie_metadata.csv
+│   └── movie_metadata.csv
 ├── flask_app/
-│ ├── app.py
-│ ├── index.html
+│   ├── app.py
+│   ├── templates/
+│   │   └── index.html
 └── notebooks/
-│ └── modelling_and_EDA.ipynb
+    └── movie_analysis.ipynb
+
 
 ## Imports
 
